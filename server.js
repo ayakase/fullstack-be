@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3000; // You can change the port number if needed
 const cors = require('cors')
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: 'https://dapper-cassata-be4bed.netlify.app/'
 }))
 app.get('/', function (req, res) {
     res.send("Home")
