@@ -6,6 +6,9 @@ const cors = require('cors')
 app.use(cors({
     origin: 'http://localhost:5173'
 }))
+app.get('/', function (req, res) {
+    res.send("Home")
+})
 app.get('/test', (req, res) => {
     res.send('Hello from Express!');
 });
