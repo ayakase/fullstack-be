@@ -12,10 +12,10 @@ app.get('/', function (req, res) {
     res.send("Home")
 })
 app.get('/test', (req, res) => {
-    res.send('Hello from Express!');
+    res.send('on mounted test success!');
 });
 app.get('/click', (req, res) => {
-    res.send('clicked from server')
+    res.send('click test succeess')
 })
 // Start the server
 app.listen(PORT, () => {
